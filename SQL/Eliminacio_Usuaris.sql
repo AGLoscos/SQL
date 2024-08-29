@@ -1,0 +1,9 @@
+DROP USER 'VL_Client@localhost';
+DROP USER 'VL_Administrador@localhost';
+DROP USER 'VL_Dissenyador@localhost';
+DROP USER 'VL_PAV1@localhost';
+DROP USER 'VL_PAV2@localhost';
+DROP USER 'VL_PAV3@localhost';
+DROP USER 'VL_PAL1@localhost';
+DROP USER 'VL_PAL2@localhost';
+DROP USER 'VL_PAL3@localhost';

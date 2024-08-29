@@ -1,0 +1,31 @@
+CREATE USER 'VL_Client@localhost' IDENTIFIED BY 'bemen3Client';
+CREATE USER 'VL_Administrador@localhost' IDENTIFIED BY 'bemen3Administra';
+CREATE USER 'VL_Dissenyador@localhost' IDENTIFIED BY 'bemen3Dissenya';
+CREATE USER 'VL_PAV1@localhost' IDENTIFIED BY 'bemen3PAV20241';
+CREATE USER 'VL_PAV2@localhost' IDENTIFIED BY 'bemen3PAV20242';
+CREATE USER 'VL_PAV3@localhost' IDENTIFIED BY 'bemen3PAV20243';
+CREATE USER 'VL_PAL1@localhost' IDENTIFIED BY 'bemen3PAL20241';
+CREATE USER 'VL_PAL2@localhost' IDENTIFIED BY 'bemen3PAL20242';
+CREATE USER 'VL_PAL3@localhost' IDENTIFIED BY 'bemen3PAL20243';
+
+GRANT SELECT ON viatgesllogers.* TO 'VL_Client@localhost';
+GRANT ALL PRIVILEGES ON viatgesllogers.* TO 'VL_Administrador@localhost';
+GRANT CREATE, SELECT, UPDATE, DELETE ON viatgesllogers.* TO 'VL_Dissenyador@localhost';
+GRANT SELECT, UPDATE, DELETE ON viatgesllogers.Clients TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Aeroports TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Vols TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Escales TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Viatges TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Reserves_Viatges TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Vols_Viatges TO 'VL_PAV1@localhost', 'VL_PAV2@localhost', 'VL_PAV3@localhost';
+
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Hotels TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Ofertes_hotels TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Reserves_hotels TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Preus TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Fitxa_casa TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Fotografies TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Fotos_casa TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Llocs_interes TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Opinions TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
+GRANT SELECT, UPDATE, DELETE  ON viatgesllogers.Reserves TO 'VL_PAL1@localhost', 'VL_PAL2@localhost', 'VL_PAL3@localhost';
